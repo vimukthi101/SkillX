@@ -173,7 +173,7 @@
 
         <h2 class="text-uppercase">
 
-          Book Now
+          Select A bid
         </h2>
         
       </div>
@@ -187,13 +187,53 @@
     <!--navbar starts -->
     <div class="form-nav">
       <ul class="nav nav-pills nav-justified steps">
-        <li><a href="#step3" data-toggle="tab">
-          Order information          </a></li>
+        <li class="active"><a href="#step1" data-toggle="tab" aria-expanded="true">1.
+          Available Bids        </a></li>
+        <li><a href="#step3" data-toggle="tab">2.
+          Bid information          </a></li>
               </ul>
     </div>
     <!--navbar ends -->
+    <!-- progress bar for step1 starts -->
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active pro-bar-in" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"> 25% </div>
+    </div>
+    <!-- progress bar for step1 ends -->
     <!-- form wizard content starts -->
     <div class="tab-content">
+      <!-- wizard step 1 starts-->
+      <div class="tab-pane active" id="step1">
+        <div class="padding-40 tab-pane-inr clearfix">
+                  </div>
+                  <div id="bookingservices" style=" ">
+          <div class="padding-40 tab-pane-inr tab-service-area clearfix equal-col-outer">
+                                    
+            <div class="col-md-3 aon-service-outer equal-col" style="height: 106px;">
+							  	<div class="aon-service-bx unselected" data-hours="0" data-costtype="fixed" data-id="152" data-cost="0.00">
+									<div class="aon-service-name"><h3>Prabath</h3></div>
+                  <div class="aon-service-name"><h5>Rs.500.00</h5></div>
+									<div class="aon-service-done"><i class="fa fa-check"></i></div>
+								</div>
+								
+							</div><div class="col-md-3 aon-service-outer equal-col" style="height: 106px;">
+							  	<div class="aon-service-bx unselected" data-hours="0" data-costtype="fixed" data-id="153" data-cost="0.00">
+									<div class="aon-service-name"><h3>Arosha</h3></div>
+                  <div class="aon-service-name"><h5>Rs.500.00</h5></div>
+									<div class="aon-service-done"><i class="fa fa-check"></i></div>
+								</div>
+								
+							</div><div class="col-md-3 aon-service-outer equal-col" style="height: 106px;">
+							  	<div class="aon-service-bx unselected" data-hours="0" data-costtype="fixed" data-id="154" data-cost="0.00">
+									<div class="aon-service-name"><h3>Vimukthi</h3></div>
+                  <div class="aon-service-name"><h5>Rs.500.00</h5></div>
+									<div class="aon-service-done"><i class="fa fa-check"></i></div>
+								</div>
+							
+							</div>            
+        </div>
+          </div>
+                </div>
+      <!-- wizard step 1 ends-->
       <!-- wizard step 3 starts-->
       <div class="tab-pane" id="step3">
         <div class="padding-40 tab-pane-inr clearfix">
@@ -202,7 +242,7 @@
               <label>
               Delivery Address              </label>
               <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-globe"></i></span>
-                <input id="booking-address" name="address" type="text" class="form-control" value="" data-bv-field="address" placeholder="Enter a location" autocomplete="off">
+                <input id="booking-address" name="address" type="text" class="form-control" value="3/15A, Gangarama Rd., Wewala, Piliyandala" data-bv-field="address" readonly="readonly">
               </div><i class="form-control-feedback bv-icon-input-group" data-bv-icon-for="address" style="display: none;"></i>
             <small class="help-block" data-bv-validator="notEmpty" data-bv-for="address" data-bv-result="NOT_VALIDATED" style="display: none;">Address is required</small></div>
           </div>
@@ -210,8 +250,8 @@
             <div class="form-group">
               <label>
               Description abut the service              </label>
-              <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
-                <textarea id="shortdesc" name="shortdesc" class="form-control" placeholder="Please insert short description of your service"></textarea>
+              <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-pencil-alt"></i></span>
+                <textarea id="shortdesc" name="shortdesc" class="form-control" readonly="readonly">birthday cake of 1kg with a spider man design</textarea>
               </div>
             </div>
           </div>
@@ -220,7 +260,16 @@
               <label>
               Order Date              </label>
               <div class="input-group"> <span class="input-group-addon v-align-t"><i class="far fa-clock"></i></span>
-                <input type="datetime-local" id="date" name="date" class="form-control">
+                <input type="datetime-local" id="date" name="date" class="form-control" readonly="readonly" value="2018-01-02T11:42:13.510">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>
+              Bidding Price              </label>
+              <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-money-bill-alt"></i></span>
+                <input id="bidding-price" name="bidding-price" type="text" class="form-control" data-bv-field="address" value="500.00" readonly="readonly">
               </div>
             </div>
           </div>
@@ -229,17 +278,25 @@
       <!-- wizard step 3 ends-->
             <!-- wizard prev & next btn starts-->
       <ul class="wizard-actions clearfix wizard">
+
+        <li class="previous disabled"><a href="javascript:void(0);" class="btn btn-primary pull-left"><i class="fa fa-arrow-left"></i>
+          Previous          </a></li>
+        <li class="next last" style="display:none"><a href="javascript:void(0);">Next <i class="fa fa-arrow-right"></i></a></li>
+          
           <li class="next" id="submitlink">
 	        <a href="javascript:void(0);" class="btn btn-primary  pull-right">Next <i class="fa fa-arrow-right"></i></a>
               </li>
+                      
         <li id="submitbtn" style="display:none">
-                  <input name="book-now" id="save-booking" type="submit" value="Order Now" class="btn btn-primary  pull-right">
+                  <input name="book-now" id="save-booking" type="submit" value="Select the bid" class="btn btn-primary  pull-right">
+          
         </li>
         
       </ul>
       <!-- wizard prev & next btn ends-->
     </div>
     <!-- form wizard content end -->
+
   </form>
   <!--Book Now Form Template Start Version 2-->
 </div>
@@ -366,7 +423,7 @@ var caps = ["bookings","cover-image","gallery-images","multiple-categories","app
 
 <script type="text/javascript">
 /* <![CDATA[ */
-var param = {"not_valid":"This value is not valid","req":"This field is required","are_you_sure":"Are you sure?","are_you_sure_approve_mail":"Are you sure? Mail will be sent to provider after approve autometically.","login_user_name":"Username is required","login_password":"Password is required","fp_user_login":"Please enter username or email","signup_user_name":"Username is required","signup_first_name":"First name is required","signup_last_name":"Last name is required","signup_address":"Address is required","allowed_country":"This country is not allowed","signup_city":"Please select city from suggestion","signup_country":"Country is required","signup_user_email":"The input is not a valid email address","providertermsncondition":"Please check the checkbox","signup_password_empty":"The password is required and cannot be empty","signup_password_length":"Password must be 5 to 15 characters long","signup_password_confirm":"The password and its confirm are not the same","primary_category":"Primary Category is required","category":"Category is required","min_cost":"Minimum cost is required","allowed_booking":"Number of bookings allowed","edit_unavl":"Edit UnAvailability","select_date":"Please select date","select_timeslot":"Select Timeslot","select_checkbox":"Please select atleast one checkbox","region":"Region is required","change_status":"Are you sure you want to change the status?","no_data":"No data found in the server","postal_code":"Postal Code is required","edit_service":"Edit Service","edit_applied_job":"Edit Applied Job","view_applied_job":"View Applied Job","service_name":"Service name is required","select_payment":"Please select payment method","set_key":"Please set secret and publish key for stripe","pub_key":"You did not set a valid publishable key","change_complete_status":"Are you sure you want to change the status to completed?","member":"Member name is required","anyone":"Any One","assign_member":"Assign Member","add_feedback":"Add Feedback","feedback":"Feedback","edit_booking":"Edit Booking","rating":"Please give some rating","comment":"Please enter some comment","any_member":"Please select any member","timeslot_member":"Please select timeslot or member","add_invoice":"Add Invoice","desc_req":"Description is required","price":"The price is required","due_date":"The due date is required","edit_invoice":"Edit Invoice","reminder_mail":"Send Reminder Mail","comment_text":"Comments","cancel":"Cancel","cancel_sub":"Are you sure you want to cancel subscription?","edit_featured_price":"Edit Price","cancel_featured":"Are you sure you want to cancel featured\/featured request?","customer_name":"Customer name is required","add_to_fav":"Add to Fav","select_service":"Please select atleast one service","otp_mail":"Please check email for OTP","otp_pass":"Please enter otp password","otp_right":"Please insert correct otp","reconfirm_email":"Please re-confirm the email address","gen_otp":"Generate One time Password to Confirm Email","edit_text":"Please insert correct otp","state":"State is required","city":"City is required","service_not_avl":"Service not available in your area","notavl_select_service":"Service not available in your area\/Select atleast one service","region_and_service":"Please select region and atleat one service","timeslot":"Please select timeslot","member_select":"Please select member","my_fav":"My Favorite","booking_suc":"Congratuations! Your booking made successully","postcode_not_avl":"Postal Code is not available","submit_now":"Submit Now","next_text":"Next","paynow":"Order Now","dt_first":"First","dt_last":"Last","dt_previous":"Prev","dt_next":"Next","dt_search":"Search","dt_show":"Show","dt_entries":"entries","dt_showing":"Showing","dt_to":"to","dt_of":"of","lang":"en-US","hire_if_booking_off_msg":"Provider booking form is closed. Still you want to book him?","select_plan":"Please select plan","add_city":"Add new city","latlng_notfound":"Lat and long cannot be found","captcha_validate":"The Validation code does not match!","no_result":"No results matched","only_digits":"Please enter only digits","not_selected":"Nothing selected","empty_table":"No data available in table","captchaverify":"Please verify the captcha code","enablebusiness":"Enable Claim Business","disbalebusiness":"Disable Claim Business","applied":"Applied","group_req":"Please insert group name","video_req":"Please inset video url","google_client_id_req":"Please inset Google Client ID","google_client_secret_req":"Please inset Google Client Secret","perpersion":"Item","perhour":"Hour","perpersion_short":"Item","perhour_short":"Hr","radius_search":"Please fill address to search by radius","show_more":"Show More Location","show_less":"Show Less Location","currencysymbol":"$","only_numeric":"Please enter only numerics","yourname":"Your name","email":"Email","website":"Website","entercomments":"Enter your comments..."};
+var param = {"not_valid":"This value is not valid","req":"This field is required","are_you_sure":"Are you sure?","are_you_sure_approve_mail":"Are you sure? Mail will be sent to provider after approve autometically.","login_user_name":"Username is required","login_password":"Password is required","fp_user_login":"Please enter username or email","signup_user_name":"Username is required","signup_first_name":"First name is required","signup_last_name":"Last name is required","signup_address":"Address is required","allowed_country":"This country is not allowed","signup_city":"Please select city from suggestion","signup_country":"Country is required","signup_user_email":"The input is not a valid email address","providertermsncondition":"Please check the checkbox","signup_password_empty":"The password is required and cannot be empty","signup_password_length":"Password must be 5 to 15 characters long","signup_password_confirm":"The password and its confirm are not the same","primary_category":"Primary Category is required","category":"Category is required","min_cost":"Minimum cost is required","allowed_booking":"Number of bookings allowed","edit_unavl":"Edit UnAvailability","select_date":"Please select date","select_timeslot":"Select Timeslot","select_checkbox":"Please select atleast one checkbox","region":"Region is required","change_status":"Are you sure you want to change the status?","no_data":"No data found in the server","postal_code":"Postal Code is required","edit_service":"Edit Service","edit_applied_job":"Edit Applied Job","view_applied_job":"View Applied Job","service_name":"Service name is required","select_payment":"Please select payment method","set_key":"Please set secret and publish key for stripe","pub_key":"You did not set a valid publishable key","change_complete_status":"Are you sure you want to change the status to completed?","member":"Member name is required","anyone":"Any One","assign_member":"Assign Member","add_feedback":"Add Feedback","feedback":"Feedback","edit_booking":"Edit Booking","rating":"Please give some rating","comment":"Please enter some comment","any_member":"Please select any member","timeslot_member":"Please select timeslot or member","add_invoice":"Add Invoice","desc_req":"Description is required","price":"The price is required","due_date":"The due date is required","edit_invoice":"Edit Invoice","reminder_mail":"Send Reminder Mail","comment_text":"Comments","cancel":"Cancel","cancel_sub":"Are you sure you want to cancel subscription?","edit_featured_price":"Edit Price","cancel_featured":"Are you sure you want to cancel featured\/featured request?","customer_name":"Customer name is required","add_to_fav":"Add to Fav","select_service":"Please select atleast one service","otp_mail":"Please check email for OTP","otp_pass":"Please enter otp password","otp_right":"Please insert correct otp","reconfirm_email":"Please re-confirm the email address","gen_otp":"Generate One time Password to Confirm Email","edit_text":"Please insert correct otp","state":"State is required","city":"City is required","service_not_avl":"Service not available in your area","notavl_select_service":"Service not available in your area\/Select atleast one service","region_and_service":"Please select region and atleat one service","timeslot":"Please select timeslot","member_select":"Please select member","my_fav":"My Favorite","booking_suc":"Congratuations! Your booking made successully","postcode_not_avl":"Postal Code is not available","submit_now":"Submit Now","next_text":"Next","paynow":"Confirm the order","dt_first":"First","dt_last":"Last","dt_previous":"Prev","dt_next":"Next","dt_search":"Search","dt_show":"Show","dt_entries":"entries","dt_showing":"Showing","dt_to":"to","dt_of":"of","lang":"en-US","hire_if_booking_off_msg":"Provider booking form is closed. Still you want to book him?","select_plan":"Please select plan","add_city":"Add new city","latlng_notfound":"Lat and long cannot be found","captcha_validate":"The Validation code does not match!","no_result":"No results matched","only_digits":"Please enter only digits","not_selected":"Nothing selected","empty_table":"No data available in table","captchaverify":"Please verify the captcha code","enablebusiness":"Enable Claim Business","disbalebusiness":"Disable Claim Business","applied":"Applied","group_req":"Please insert group name","video_req":"Please inset video url","google_client_id_req":"Please inset Google Client ID","google_client_secret_req":"Please inset Google Client Secret","perpersion":"Item","perhour":"Hour","perpersion_short":"Item","perhour_short":"Hr","radius_search":"Please fill address to search by radius","show_more":"Show More Location","show_less":"Show Less Location","currencysymbol":"$","only_numeric":"Please enter only numerics","yourname":"Your name","email":"Email","website":"Website","entercomments":"Enter your comments..."};
 /* ]]> */
 </script>
 </body>

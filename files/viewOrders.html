@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-poppins-n6-active wf-active">
+<head>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<title>SkillX</title>
+	<link rel="stylesheet" id="wsl-widget-css" href="../css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="../css/font-awesome.css" type="text/css" media="all">
+	<link rel="stylesheet" id="service_finder-compress-cache-css" href="../css/main.css" type="text/css" media="all">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery-migrate.min.js"></script>
+	<script type="text/javascript">
+		// <![CDATA[
+
+		var param = '';
+
+		var ajaxurl = '';
+
+		var scheduleurl = '';
+
+		var caltmpls = '';
+
+		var customerscheduleurl = '';
+
+		var myaccount = '';
+
+		var datavalidate = '';
+
+		var captchavalidate = '';
+
+		var captchavalidatepage = '';
+
+		var countrycount = '';
+
+		var allcountry = '';
+
+		var allowedcountry = '';
+
+		var allowedcountries = '';
+
+		var showallowedcountries = '';
+
+		var currencysymbol = '';
+
+		var showaddressinfo = '';
+
+		var accessaddressinfo = '';
+
+		var tokenRequestUrl = '';
+
+		var showblogitem;
+
+		var availabilitytab;
+
+		var themestyle;
+
+		
+
+		ajaxurl = 'http://aonetheme.com/sfdemo/wp-admin/admin-ajax.php';
+
+		currencysymbol = '&#36;';
+
+		scheduleurl = 'http://aonetheme.com/sfdemo/wp-content/plugins/sf-booking/frontend/modules/schedule/schedule-data.php';
+
+		caltmpls = 'http://aonetheme.com/sfdemo/wp-content/plugins/sf-booking/assets/bootstrap-calendar/tmpls/';
+
+		customerscheduleurl = 'http://aonetheme.com/sfdemo/wp-content/plugins/sf-booking/frontend/modules/schedule/customer-schedule-data.php';
+
+		myaccount = 'http://aonetheme.com/sfdemo/my-account/';
+
+		datavalidate = 'http://aonetheme.com/sfdemo/wp-content/plugins/sf-booking/frontend/modules/book-now/validate-data.php';
+
+		captchavalidate = 'http://aonetheme.com/sfdemo/wp-content/plugins/sf-booking/lib/validate-captcha.php';
+
+		captchavalidatepage = 'http://aonetheme.com/sfdemo/wp-content/plugins/sf-booking/lib/validate-captcha-page.php';
+
+		countrycount = '1';
+
+		allcountry = '1';
+
+		showaddressinfo = '1';
+
+		accessaddressinfo = '1';
+
+		themestyle = 'style-2';
+
+		if(!parseInt(allcountry)){
+
+			if(parseInt(countrycount) == 1){
+
+			allowedcountry = 'us';
+
+			}else if(parseInt(countrycount) > 1){
+
+			allowedcountries = [];
+
+			showallowedcountries = '';
+
+			}
+
+		}	
+
+		// ]]>
+
+	</script>
+
+	<link rel="stylesheet" href="../css/css(2).css">
+</head>
+<body class="sf-header-style-7 service-finder">
+
+<div class="page-wraper">
+<!-- header -->
+
+<header id="header-part" class="mostion clearfix header-style6 sf-header-full-width">
+  <!-- No top bar header style start -->
+
+  <div class="main-bar clearfix ">
+
+    <div class="container">
+
+      <div class="logo-header mostion">
+      	<img src="../images/logo-1.png" alt="SkillX" title="SkillX"></div>
+
+      <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed"> <span class="sr-only">
+
+      Toggle navigation
+      </span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+  	 
+
+      <div class="extra-nav"> 
+
+        
+        <div class="extra-cell"><a href="javascript:void(0);" class="btn btn-border btn-sm" data-redirect="yes" data-action="login" data-toggle="modal" data-target="#login-Modal"><i class="fa fa-user"></i>
+
+        Login
+        </a> </div>
+
+        <div class="extra-cell">
+
+        <a href="javascript:void(0);" class="btn btn-border btn-sm" data-toggle="modal" data-action="signup" data-target="#login-Modal"><i class="fa fa-plus"></i>
+
+        Sign up
+        </a> </div>
+        
+        </div>
+
+      <div class="header-nav navbar-collapse collapse">
+
+        <ul id="primary-menu" class="nav navbar-nav">
+        	<li id="menu-item-2697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2697"><a href="../index.html">Home</a></li>
+			<li id="menu-item-2278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2278"><a href="#">FIND</a></li>
+			<li id="menu-item-2695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2695"><a href="#">ORDER</a></li>
+			<li id="menu-item-2696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2696"><a href="#">PROFILE</a></li>
+		</ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- header END -->
+
+<div class="page-content">
+  
+  <!-- Left & right section start -->
+  <div class="container">
+  <div class="sf-category-des">
+  <h2 class="sf-title">Orders</h2>
+  <div class="sf-cat-text">Here are th elist of orders palced by you. Some of them been bidded by the service poviders. You can select one order and view the bid information.</div>
+  </div>
+        <!-- Display category result start -->
+
+<div class="section-content">
+    <div class="cvf_pag_loading">
+      <div class="cvf_universal_container">
+<div class="cvf-pagination-content">
+<div class="cvf-universal-content"><div class="listing-grid-box sf-listing-grid-4 equal-col-outer">
+              <div class="row">
+                <!--order 1 starts-->
+                <div class="col-md-3 col-sm-6 equal-col" style="height: 441px;">
+      <div class="sf-search-result-girds" id="proid-13">
+                            
+                                <div class="sf-featured-top">
+                                    <div class="sf-featured-media" style="background-image:url(http://aonetheme.com/sfdemo/wp-content/uploads/2016/08/dreamstime_l_19288520-600x450.jpg)"></div>
+                                    <div class="sf-overlay-box"></div>
+                                    <span class="sf-categories-label"><a href="viewBids.html">Cake Order</a></span>
+                                    <span class="sf-featured-approve" style="color: rgb(0,255,0);"><i class="fa fa-check"></i><span>Bidded</span></span>
+                  
+                                    
+                                    <div class="sf-featured-info">
+                                        <div class="sf-featured-sign">BIDDED</div>
+                                        
+                                        <div class="sf-featured-address"><i class="fa fa-map-marker"></i>Order : 2018/05/20</div>
+                                        
+                                    </div>
+                  <a href="viewBids.html" class="sf-profile-link"></a>
+                                </div>
+                                
+                                <div class="sf-featured-bot">
+                                    <div class="sf-featured-comapny">ORDER DETAILS</div>
+                                    <div class="sf-featured-text">cake with a spider man design.</div>
+                                    
+                                </div>
+                             
+
+                            </div>
+               </div>
+ <!--order 1 ends-->  
+ <!--order 2 starts-->
+                <div class="col-md-3 col-sm-6 equal-col" style="height: 441px;">
+      <div class="sf-search-result-girds" id="proid-13">
+                            
+                                <div class="sf-featured-top">
+                                    <div class="sf-featured-media" style="background-image:url(http://aonetheme.com/sfdemo/wp-content/uploads/2016/08/dreamstime_l_19288520-600x450.jpg)"></div>
+                                    <div class="sf-overlay-box"></div>
+                                    <span class="sf-categories-label"><a href="viewBids.html">Cake Order</a></span>
+                                    <span class="sf-featured-approve"><i class="fa fa-check"></i><span>Open</span></span>
+                  
+                                    
+                                    <div class="sf-featured-info">
+                                        <div class="sf-featured-sign">OPEN</div>
+                                        
+                                        <div class="sf-featured-address"><i class="fa fa-map-marker"></i>Order : 2018/05/20</div>
+                                        
+                                    </div>
+                  <a href="viewBids.html" class="sf-profile-link"></a>
+                                </div>
+                                
+                                <div class="sf-featured-bot">
+                                    <div class="sf-featured-comapny">ORDER DETAILS</div>
+                                    <div class="sf-featured-text">cake with a spider man design.</div>
+                                    
+                                </div>
+                             
+
+                            </div>
+               </div>
+ <!--order 2 ends-->  
+
+               <div class="col-md-3 col-sm-6 equal-col" style="height: 441px;">
+      <div class="sf-search-result-girds" id="proid-18">
+                            
+                               
+                                
+                            </div>
+               </div></div>
+</div>
+</div>
+<br class="clear">
+</div>
+
+<div class="cvf-pagination-nav">
+<div class="cvf-universal-pagination pagination clearfix">
+  <ul class="pagination">
+    
+    <li data-pnum="1" class="inactive"><a href="javascript:;"><i class="fa fa-angle-double-left"></i></a></li>
+    
+    <li class="inactive"><a href="javascript:;"><i class="fa fa-angle-left"></i></a></li>
+    
+    <li data-pnum="1" class="selected active"><a href="javascript:;">1</a></li>
+    
+    <li class="inactive"><a href="javascript:;"><i class="fa fa-angle-right"></i></a></li>
+    
+    <li data-pnum="1" class="inactive"><a href="javascript:;"><i class="fa fa-angle-double-right"></i></a></li>
+    
+  </ul>
+</div>
+</div>
+</div>
+    </div>
+</div>
+<!-- result END -->
+    <!-- Display category result end -->
+  </div></div>
+
+<!-- Footer -->
+
+
+<footer id="footer" class="sf-footer-2">
+
+        
+
+            <div class="footer-top">
+
+            
+
+                <div class="container">
+
+                    
+
+                    <div class="">
+
+                    
+
+                        <div class="f-logo"><a href="#"><img src="../images/footer-logo.png" width="148" height="54" alt=""></a></div>
+
+                        
+
+                        <ul class="sf-site-liks">
+
+                        	<li><a href="../index.html">Home</a></li>
+
+                            <li><a href="javascript:;">About us</a></li>
+
+                            <li><a href="javascript:;">Blog</a></li>
+
+                            <li><a href="javascript:;">Contact us</a></li>
+
+                            <li><a href="javascript:;">Privacy Policy</a></li>
+
+                            <li><a href="javascript:;">Terms of Use</a></li>
+
+                        </ul>
+
+                    </div>
+
+                  </div>
+                  
+
+            </div>
+
+            
+
+            <div class="footer-bottom">
+
+            	<div class="container">
+
+                    <div class="row">
+
+                    
+
+                    	<div class="col-md-12 text-center">
+
+                        	<span>Copyright 2018 | hMS All Rights Reserved</span>
+
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <button class="scroltop fa fa-arrow-up" style="display: inline-block;"></button>
+
+            
+
+        </footer>
+
+<!-- Footer END-->
+</div>
+<script type="text/javascript" src="../js/js.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/star-rating.js"></script>
+
+<script type="text/javascript" src="../js/custom-effects.js"></script>
+
+<script type="text/javascript" src="../js/bootstrapValidator.js"></script>
+
+<script type="text/javascript" src="../js/jquery.bootstrap.wizard.js"></script>
+
+<script type="text/javascript" src="../js/booking-form-v2.js"></script>
+<script type="text/javascript">
+/*Declare global variable*/
+var staffmember = "";
+var jobid = "";
+var checkjobauthor = "0";
+var totalcost = "40";
+var adminfeetype = "0";
+var adminfeefixed = "0";
+var adminfeepercentage = "0";
+var mincost = "40";
+var booking_basedon = "open";
+var stripepublickey = "";
+var twocheckoutaccountid = "";
+var twocheckoutpublishkey = "";
+var twocheckouttype = "";
+var twocheckoutmode = "sandbox";
+var booking_charge_on_service = "yes";
+var caps = ["bookings","cover-image","gallery-images","multiple-categories","apply-for-job","job-alerts","branches","google-calendar","message-system","invoice","availability","staff-members"];
+</script>
+<script type="text/javascript" src="../js/custom.js"></script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var param = {"not_valid":"This value is not valid","req":"This field is required","are_you_sure":"Are you sure?","are_you_sure_approve_mail":"Are you sure? Mail will be sent to provider after approve autometically.","login_user_name":"Username is required","login_password":"Password is required","fp_user_login":"Please enter username or email","signup_user_name":"Username is required","signup_first_name":"First name is required","signup_last_name":"Last name is required","signup_address":"Address is required","allowed_country":"This country is not allowed","signup_city":"Please select city from suggestion","signup_country":"Country is required","signup_user_email":"The input is not a valid email address","providertermsncondition":"Please check the checkbox","signup_password_empty":"The password is required and cannot be empty","signup_password_length":"Password must be 5 to 15 characters long","signup_password_confirm":"The password and its confirm are not the same","primary_category":"Primary Category is required","category":"Category is required","min_cost":"Minimum cost is required","allowed_booking":"Number of bookings allowed","edit_unavl":"Edit UnAvailability","select_date":"Please select date","select_timeslot":"Select Timeslot","select_checkbox":"Please select atleast one checkbox","region":"Region is required","change_status":"Are you sure you want to change the status?","no_data":"No data found in the server","postal_code":"Postal Code is required","edit_service":"Edit Service","edit_applied_job":"Edit Applied Job","view_applied_job":"View Applied Job","service_name":"Service name is required","select_payment":"Please select payment method","set_key":"Please set secret and publish key for stripe","pub_key":"You did not set a valid publishable key","change_complete_status":"Are you sure you want to change the status to completed?","member":"Member name is required","anyone":"Any One","assign_member":"Assign Member","add_feedback":"Add Feedback","feedback":"Feedback","edit_booking":"Edit Booking","rating":"Please give some rating","comment":"Please enter some comment","any_member":"Please select any member","timeslot_member":"Please select timeslot or member","add_invoice":"Add Invoice","desc_req":"Description is required","price":"The price is required","due_date":"The due date is required","edit_invoice":"Edit Invoice","reminder_mail":"Send Reminder Mail","comment_text":"Comments","cancel":"Cancel","cancel_sub":"Are you sure you want to cancel subscription?","edit_featured_price":"Edit Price","cancel_featured":"Are you sure you want to cancel featured\/featured request?","customer_name":"Customer name is required","add_to_fav":"Add to Fav","select_service":"Please select atleast one service","otp_mail":"Please check email for OTP","otp_pass":"Please enter otp password","otp_right":"Please insert correct otp","reconfirm_email":"Please re-confirm the email address","gen_otp":"Generate One time Password to Confirm Email","edit_text":"Please insert correct otp","state":"State is required","city":"City is required","service_not_avl":"Service not available in your area","notavl_select_service":"Service not available in your area\/Select atleast one service","region_and_service":"Please select region and atleat one service","timeslot":"Please select timeslot","member_select":"Please select member","my_fav":"My Favorite","booking_suc":"Congratuations! Your booking made successully","postcode_not_avl":"Postal Code is not available","submit_now":"Submit Now","next_text":"Next","paynow":"Bid Now","dt_first":"First","dt_last":"Last","dt_previous":"Prev","dt_next":"Next","dt_search":"Search","dt_show":"Show","dt_entries":"entries","dt_showing":"Showing","dt_to":"to","dt_of":"of","lang":"en-US","hire_if_booking_off_msg":"Provider booking form is closed. Still you want to book him?","select_plan":"Please select plan","add_city":"Add new city","latlng_notfound":"Lat and long cannot be found","captcha_validate":"The Validation code does not match!","no_result":"No results matched","only_digits":"Please enter only digits","not_selected":"Nothing selected","empty_table":"No data available in table","captchaverify":"Please verify the captcha code","enablebusiness":"Enable Claim Business","disbalebusiness":"Disable Claim Business","applied":"Applied","group_req":"Please insert group name","video_req":"Please inset video url","google_client_id_req":"Please inset Google Client ID","google_client_secret_req":"Please inset Google Client Secret","perpersion":"Item","perhour":"Hour","perpersion_short":"Item","perhour_short":"Hr","radius_search":"Please fill address to search by radius","show_more":"Show More Location","show_less":"Show Less Location","currencysymbol":"$","only_numeric":"Please enter only numerics","yourname":"Your name","email":"Email","website":"Website","entercomments":"Enter your comments..."};
+/* ]]> */
+</script>
+</body>
+</html>
